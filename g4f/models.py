@@ -32,22 +32,6 @@ class Model:
         base_provider: str = 'openai'
         best_provider: Provider.Provider = Provider.ChatFree
 
-    class gpt_4_dev:
-        name: str = 'gpt-4-for-dev'
-        base_provider: str = 'openai'
-        best_provider: Provider.Provider = Provider.Phind
-
-    class gpt_4:
-        name: str = 'gpt-4'
-        base_provider: str = 'openai'
-        best_provider: Provider.Provider = Provider.ChatgptAi
-
-    class gpt_4_0613:
-        name: str = 'gpt-4-0613'
-        base_provider: str = 'openai'
-        best_provider: Provider.Provider = Provider.Lockchat
-        best_providers: list = [Provider.Bing, Provider.Lockchat]
-
     class claude_instant_v1_100k:
         name: str = 'claude-instant-v1-100k'
         base_provider: str = 'anthropic'
@@ -184,9 +168,6 @@ class ModelUtils:
         'gpt-3.5-turbo': Model.gpt_35_turbo,
         'gpt-3.5-turbo-0613': Model.gpt_35_turbo_0613,
         'gpt-3.5-turbo-0301': Model.gpt_35_turbo_0301,
-        'gpt-4': Model.gpt_4,
-        'gpt-4-0613': Model.gpt_4_0613,
-        'gpt-4-for-dev': Model.gpt_4_dev,
         'gpt-3.5-turbo-16k': Model.gpt_35_turbo_16k,
         'gpt-3.5-turbo-16k-0613': Model.gpt_35_turbo_16k_0613,
 
